@@ -1,0 +1,16 @@
+<form action="/tenents/<%= model.id%>" method="post">
+<input type="text" name="name" placeholder="entertenentname" value="<%= model.name%>">
+<input type="submit" value="ADD">
+</form>
+<form action="/entitys/new" method="get">
+<input type="hidden" name="owner" value="<%= model.id%>">
+<input type="submit" value="entityADD">
+</form>
+<form action="/feildes/new" method="get">
+<input type="hidden" name="pp" value="<%= model.id%>">
+<input type="submit" value="feildADD">
+</form>
+<form action="/tokens/new" method="get">
+<input type="hidden" name="tenent" value="<%= model.id%>">
+<input type="submit" value="tokenADD">
+</form>
